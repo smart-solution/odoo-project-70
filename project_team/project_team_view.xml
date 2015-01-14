@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+   <!--
+       Project Team Views 
+   -->
+
+    <record model="ir.ui.view" id="view_neopaul_task_form">
+        <field name="name">view.neopaul_task.form</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="team_id" string="Team"/>
+            </field>
+        </field>
+    </record>
+
+
+    </data>
+</openerp>
